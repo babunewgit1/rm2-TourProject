@@ -1,10 +1,11 @@
 import "./App.css";
+import Main from "./Components/Main";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <p>react boilar plate</p>
+        <Main />
       </div>
     </div>
   );

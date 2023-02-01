@@ -77,3 +77,144 @@ label {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
+
+.loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading img {
+  display: block;
+  width: 200px;
+}
+
+.tourheading h2 {
+  font-size: 38px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tourheading > span {
+  display: block;
+  width: 200px;
+  height: 3px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #4490aa;
+  margin-top: 15px;
+}
+
+.tour-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.tour-img img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.tour-bloc {
+  margin-top: 50px;
+}
+
+.tour-bloc {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tour-img {
+  position: relative;
+}
+
+.tour-img span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #49a6e9;
+  background-color: #ebf7ff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 0px 0px 0px 12px;
+}
+
+.tour-para {
+  padding: 25px;
+}
+
+.tour-para h3 {
+  font-size: 18px;
+  color: #49a6e9;
+  letter-spacing: 1.5px;
+}
+
+.tour-para p {
+  margin: 10px 0px;
+  font-size: 14px;
+}
+
+.tour-para button#more {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: #49a6e9;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 0.25rem;
+}
+
+.nomorex {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .tour-wrapper {
+    display: block;
+  }
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .tour-wrapper {
+    display: block;
+  }
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+  .tour-wrapper {
+    display: block;
+  }
+}
